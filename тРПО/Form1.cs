@@ -16,12 +16,15 @@ namespace тРПО
         {
             InitializeComponent();
         }
+        delegate void method();
+        method async;
         public async void CheckFileAsync()
         {
             await
                 Task.Run(() => CheckFile());
         }
-        private void CheckFile()
+
+        public void CheckFile()
         { 
             DateTime a = DateTime.MinValue;
             while (true)
@@ -34,12 +37,7 @@ namespace тРПО
                         FileInfo s = new FileInfo(pt);
                         if (s.LastWriteTime > a)
                         {
-                            tablo.Text = "";
-                            using (StreamReader stream = new StreamReader(FilePath.Text))
-                            {
-                                while(!stream.EndOfStream)
-                                    tablo.Text+=stream.ReadLine() + Environment.NewLine;
-                            }
+                            tablo.Invoke(async);
                         }
                         a = s.LastWriteTime;
                         s = null;
@@ -53,9 +51,20 @@ namespace тРПО
                 System.Threading.Thread.Sleep(500);
             }
         }
+        public void WriteTablo()
+        {
+            using (StreamReader stream = new StreamReader(FilePath.Text))
+            {
+                tablo.Text = "";
+                while (!stream.EndOfStream)
+                    tablo.Text += stream.ReadLine() + Environment.NewLine;
+            }
+        }
+
+
         private void Button1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
+            OpenFileDialog ofd = new OpenFileDialog() { Filter = "Текстовые файлы(*.txt)|*.txt" };
             if (ofd.ShowDialog() == DialogResult.OK)
                 FilePath.Text = ofd.FileName;
             
@@ -76,6 +85,7 @@ namespace тРПО
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            async = WriteTablo;
             CheckFileAsync();
         }
     }
