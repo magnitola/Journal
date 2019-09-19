@@ -8,3 +8,13 @@ C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.csproj.GenerateR
 C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.exe
 C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.pdb
+H:\трпо\Journal\тРПО\bin\Debug\тРПО.exe.config
+H:\трпо\Journal\тРПО\bin\Debug\тРПО.exe
+H:\трпо\Journal\тРПО\bin\Debug\тРПО.pdb
+H:\трпо\Journal\тРПО\obj\Debug\тРПО.csprojAssemblyReference.cache
+H:\трпо\Journal\тРПО\obj\Debug\тРПО.Form1.resources
+H:\трпо\Journal\тРПО\obj\Debug\тРПО.Properties.Resources.resources
+H:\трпо\Journal\тРПО\obj\Debug\тРПО.csproj.GenerateResource.cache
+H:\трпо\Journal\тРПО\obj\Debug\тРПО.csproj.CoreCompileInputs.cache
+H:\трпо\Journal\тРПО\obj\Debug\тРПО.exe
+H:\трпо\Journal\тРПО\obj\Debug\тРПО.pdb

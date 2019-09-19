@@ -15,7 +15,6 @@ namespace тРПО
         public Form1()
         {
             InitializeComponent();
-            CheckFileAsync();
         }
         public async void CheckFileAsync()
         {
@@ -73,6 +72,11 @@ namespace тРПО
                 sw.WriteLine($"{DateTime.Now} | {Environment.UserName} | {s}");
                 sw.Close();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            CheckFileAsync();
         }
     }
 }

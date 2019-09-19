@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.FilePath = new System.Windows.Forms.TextBox();
             this.path = new System.Windows.Forms.Button();
             this.TextBox = new System.Windows.Forms.TextBox();
@@ -75,6 +76,8 @@
             this.tablo.Location = new System.Drawing.Point(13, 67);
             this.tablo.Multiline = true;
             this.tablo.Name = "tablo";
+            this.tablo.ReadOnly = true;
+            this.tablo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tablo.Size = new System.Drawing.Size(373, 176);
             this.tablo.TabIndex = 4;
             // 
@@ -88,8 +91,11 @@
             this.Controls.Add(this.TextBox);
             this.Controls.Add(this.path);
             this.Controls.Add(this.FilePath);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Журнал";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
