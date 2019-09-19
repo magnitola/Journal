@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\тРПО\тРПО\bin\Debug\тРПО.exe.config
+C:\Users\User\source\repos\тРПО\тРПО\bin\Debug\тРПО.exe
+C:\Users\User\source\repos\тРПО\тРПО\bin\Debug\тРПО.pdb
+C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.csprojAssemblyReference.cache
+C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.Form1.resources
+C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.Properties.Resources.resources
+C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.csproj.GenerateResource.cache
+C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.exe
+C:\Users\User\source\repos\тРПО\тРПО\obj\Debug\тРПО.pdb
