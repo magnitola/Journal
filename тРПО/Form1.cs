@@ -76,9 +76,14 @@ namespace тРПО
             {
                 string s = TextBox.Text;
                 TextBox.Text = "";
-
-                StreamWriter sw = new StreamWriter(FilePath.Text, true);
-                sw.WriteLine($"{DateTime.Now} | {Environment.UserName} | {s}");
+                string file = "";
+                using (StreamReader stream = new StreamReader(FilePath.Text))
+                {
+                    while (!stream.EndOfStream)
+                        file = stream.ReadToEnd();
+                }
+                StreamWriter sw = new StreamWriter(FilePath.Text);
+                sw.Write($"{DateTime.Now} | {Environment.UserName} | {s}\n" + file);
                 sw.Close();
             }
         }
